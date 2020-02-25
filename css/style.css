@@ -1,8 +1,45 @@
+/*
 prel färgtema
 #E89D48
 #FF7342
 #E07980
 
 
+Kanske även ngt blått som matchar möblerna: typ #46BDA7 */
 
-Kanske även ngt blått som matchar möblerna: typ #46BDA7
+@media screen and (max-width: 600px){
+    #container{
+        display: grid;
+        grid-template-areas:
+        'mn'
+        's1'
+        's2'
+        's3'
+        's4'
+        'ft';
+        grid-template-rows: 100vh  100vh  100vh  100vh  ;
+        grid-template-columns: 100vw;
+    }
+
+    
+}
+
+header{
+    position: fixed;
+    width: 100vw;
+    height: 50px;
+    background-color: white;
+    top: 0;
+
+}
+
+main{
+    grid-area: mn;
+    background-color: #E89D48;
+
+}
+
+.historia{
+    grid-area: s1;
+    background-color: #FF7342;
+}
