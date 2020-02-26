@@ -27,10 +27,16 @@ Kanske även ngt blått som matchar möblerna: typ #46BDA7 */
 header{
     position: fixed;
     width: 100vw;
-    height: 50px;
-    background-color: white;
+    height: 70px;
+    background: rgba(255, 255, 255, 0.26);
     top: 0;
+    font-family: 'sail' ;
+    text-align: center;
 
+}
+
+h1{
+    color: white;
 }
 
 main{
@@ -39,7 +45,64 @@ main{
 
 }
 
-.historia{
-    grid-area: s1;
-    background-color: #FF7342;
+.sec_index{
+    /*padding: 30px;*/
+    text-align: center;
+    font-family: 'Raleway' ;
+    
 }
+article{
+    margin: 30px;
+}
+
+ .button_index{
+    background-color: white;
+    width: 150px;
+    height: 40px;
+    margin: 40px;
+    display: inline-block;
+    text-decoration: none;
+    border: none;
+    border-radius: 10px;
+    font-family: 'raleway';
+    color: black;
+    font-size: 20px;
+    text-decoration-color: black;
+    
+    
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+.historia {
+    grid-area: s1;
+    background-color: rgb(253, 132, 87);
+   
+}
+
+.mat{
+    grid-area: s2;
+    background: #E07980
+}
+
+.hitta{
+    grid-area: s3;
+    background: rgb(88, 190, 172);
+}
+
+img{
+    max-width: 100%;
+   
+}
+
+/*#slideshow{
+    animation:fading 7s infinite;
+    width: 100%
+}
+    
+
+    @keyframes fading{0%{opacity:0}50%{opacity:1}100%{opacity:0}}
