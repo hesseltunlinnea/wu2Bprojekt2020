@@ -17,12 +17,68 @@ Kanske även ngt blått som matchar möblerna: typ #46BDA7 */
         's3'
         's4'
         'ft';
-        grid-template-rows: 100vh  100vh  100vh  100vh  ;
+        grid-template-rows: 100vh  100vh  100vh  100vh 100vh 40vh ;
         grid-template-columns: 100vw;
     }
 
+    .img{
+        height: 50%;
+    }
+   
+
     
 }
+
+@media screen and (min-width: 601px){
+    #container{
+        display: grid;
+        grid-template-areas:
+        'mn mn'
+        's1 s1'
+        's2 s2'
+        's3 s3'
+        's4 s4'
+        'ft ft';
+        grid-template-rows: 100vh  50vh  50vh  50vh 50vh 40vh ;
+        grid-template-columns: 100vw;
+    }
+
+    .sec_index{
+        display: grid;
+        grid-template-areas: 
+        'left right';
+        grid-template-columns: 50vw 50vw
+    }
+
+    .right{
+        grid-area: right;
+    }
+
+    .left{
+        grid-area: left;
+    }
+
+    .historia.img{
+        background-image: url(../img/IMG_05721.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+        
+    }
+
+
+
+}
+
+
+/*INDEX PAGE OCH GEMENSAMMA TAGGAR*/
+
+.slideshow-container {
+    height: 100%;
+    width: auto;
+    position: relative;
+    margin: auto;
+  }
 
 header{
     position: fixed;
@@ -32,7 +88,14 @@ header{
     top: 0;
     font-family: 'sail' ;
     text-align: center;
+    display: flex; 
+    align-content: flex-end;
+    z-index: 0;
 
+}
+
+.menu_button{
+    color: white
 }
 
 h1{
@@ -84,6 +147,8 @@ a {
    
 }
 
+
+
 .mat{
     grid-area: s2;
     background: #E07980
@@ -94,10 +159,71 @@ a {
     background: rgb(88, 190, 172);
 }
 
+.kontakt{
+    grid-area: s4;
+    background-color: green;
+}
+
+footer{
+    grid-area: ft;
+    background-color: gray
+}
+
+
+
 img{
     max-width: 100%;
-   
 }
+
+.historia .img{
+    background-image: url(../img/20200308_120151.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.mat .img{
+    background-image: url(../img/IMG_05721.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.hitta .img{
+    background-image: url(../img/IMG_05721.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+
+
+
+.google_map{
+    
+}
+
+
+/*SUBPAGES*/
+
+.subpage_container{
+    display: grid;
+    grid-template-areas:
+    'pic'
+    'sec'
+    'ft';
+    grid-template-rows: 50vh  auto  40vh ;
+    grid-template-columns: 100vw;
+}
+
+.head_subpage{
+    grid-area: pic;
+}
+
+.sec_subpage{    /* section på undersidorna  */
+    grid-area: sec;
+    background: green;
+}
+
+
 
 /*#slideshow{
     animation:fading 7s infinite;
