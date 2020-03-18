@@ -66,6 +66,12 @@ Kanske även ngt blått som matchar möblerna: typ #46BDA7 */
         
     }
 
+    .sec_subpage article{
+        margin: 2vw 25vw 2vw 25vw ;
+        background: white;
+        padding: 5vw
+        
+    }
 
 
 }
@@ -105,6 +111,7 @@ h1{
 main{
     grid-area: mn;
     background-color: #E89D48;
+    z-index: -1;
 
 }
 
@@ -182,13 +189,13 @@ img{
 
 }
 .mat .img{
-    background-image: url(../img/IMG_05721.jpg);
+    background-image: url(../img/varmat.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 
 }
 .hitta .img{
-    background-image: url(../img/IMG_05721.jpg);
+    background-image: url(../img/andrummap.png);
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -222,7 +229,6 @@ img{
     grid-area: sec;
     background: green;
 }
-
 
 
 /*#slideshow{
