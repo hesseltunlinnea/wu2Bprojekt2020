@@ -7,42 +7,60 @@
     <title>Andrum - Vegetarisk restaurang och café i Göteborg</title>
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Barlow|Oswald:700|Parisienne|Questrial|Raleway:300|Sail&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
    
 </head>
 <body>
     <header>
-        <img class="menu_button" src="./img/menu-24px.svg" alt="">
-        <h1>Andrum</h1>
+        
+            <div class="menu-button" onclick="showMenu()">
+                    <i class="material-icons">menu</i>
+                </div>
+        <a href="#index.html"><h1>Andrum</h1></a>
         
 
     </header>
 
+    <div class="menu">
+
+        <ul>
+            <li><a href="./historia_undersida.html">OM OSS</a></li> 
+            <li><a href="./mat_undersida.html">VÅR MAT</a></li>
+            <li><a href="./hitta_undersida.html">HITTA HIT</a></li>
+            <li><a href="./kontakt_undersida.html">KONTAKTA OSS</a></li>
+        
+        </ul>
+        
+    </div>
+
+    <div class="fade-layer"  onclick="showMenu()"></div>
+
     <div id="container">
+        
     
-    <main>m
+    <main>
 <!-- https://www.w3schools.com/howto/howto_js_slideshow.asp -->
      <div class="slideshow-container">
 
-<div class="mySlides fade">
-  <div class="numbertext">1 / 3</div>
-  <!-- Lägg en picturetag för att göra att bilderna ändras beroende på skärm-->
-  <img src="./img/Slideshow/20200308_115814.jpg" style="width:100%">
-  <div class="text">Caption Text</div>
-</div>  
+        <div class="mySlides fade">
+        
+        <!-- Lägg en picturetag för att göra att bilderna ändras beroende på skärm-->
+        <img src="./img/Slideshow/20200308_115814.jpg" style="width:100%">
+        <div class="text">Caption Text</div>
+        </div>  
 
-<div class="mySlides fade">
-  <div class="numbertext">2 / 3</div>
-  <img src="./img/Slideshow/20200308_115948.jpg" style="width:100%">
-  <div class="text">Caption Two</div>
-</div>
+        <div class="mySlides fade">
+        
+        <img src="./img/Slideshow/20200308_115948.jpg" style="width:100%">
+        <div class="text">Caption Two</div>
+        </div>
 
 
-<div class="mySlides fade">
-  <div class="numbertext">3 / 3</div>
-  <img src="./img/Slideshow/20200308_120020.jpg" style="width:100%">
-  <div class="text">Caption Three</div>
-</div>
+        <div class="mySlides fade">
+        
+        <img src="./img/Slideshow/20200308_120020.jpg" style="width:100%">
+        <div class="text">Caption Three</div>
+        </div>
 
 </div>
 <br>
@@ -106,6 +124,8 @@
     </section>
 
     <footer>
+        <h2>Andrum</h2>
+
         <article>
             <h5>Öppetider</h5>
             <ul>

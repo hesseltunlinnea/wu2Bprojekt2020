@@ -6,6 +6,9 @@ prel färgtema
 
 
 Kanske även ngt blått som matchar möblerna: typ #46BDA7 */
+body{
+    margin: 0;
+}
 
 @media screen and (max-width: 600px){
     #container{
@@ -25,7 +28,7 @@ Kanske även ngt blått som matchar möblerna: typ #46BDA7 */
         height: 50%;
     }
    
-
+    
     
 }
 
@@ -67,7 +70,7 @@ Kanske även ngt blått som matchar möblerna: typ #46BDA7 */
     }
 
     .sec_subpage article{
-        margin: 2vw 25vw 2vw 25vw ;
+        margin: 2vw 20vw 2vw 20vw ;
         background: white;
         padding: 5vw
         
@@ -83,8 +86,15 @@ Kanske även ngt blått som matchar möblerna: typ #46BDA7 */
     height: 100%;
     width: auto;
     position: relative;
+    top: 0;
     margin: auto;
+    overflow: hidden;
   }
+
+.myslides{
+    position: relative;
+    top: 0
+}
 
 header{
     position: fixed;
@@ -93,16 +103,76 @@ header{
     background: rgba(255, 255, 255, 0.26);
     top: 0;
     font-family: 'sail' ;
+    font-size: 20px;
     text-align: center;
-    display: flex; 
-    align-content: flex-end;
     z-index: 0;
 
 }
 
-.menu_button{
-    color: white
+header h1{
+    position: relative;
+    top: -20%
 }
+
+
+
+.menu-button{
+    cursor: pointer;
+    display: inline;
+}
+
+.menu-button i.material-icons{
+    font-size: 2.5rem;
+    color: white;
+}
+
+.menu{
+    height: 100vh;
+    width: 30vw;
+    background: #E07980;
+    position: fixed;
+    top: 0;
+    left: -90vw;
+    transition: left 0.3s;
+    box-shadow: 10px 0px 21px -10px rgba(0,0,0,0.75);
+    z-index: 10;
+    align-content: center;
+    text-align: center;
+}
+
+.menu ul{
+    list-style-type: none;
+    margin:0;
+    align-items: center
+}
+
+.menu li{
+    margin:0
+}
+.menu a{
+    text-decoration: none;
+    font-size: 20px
+}
+
+.show{
+    left: 0;
+}
+
+.fade-layer{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    display: none;
+    z-index: 5;
+}
+
+.fade-layer.visible{
+    display: block;
+}
+
 
 h1{
     color: white;
@@ -230,6 +300,25 @@ img{
     background: green;
 }
 
+.historia.head_subpage{
+    background-image: url("../img/20200308_120151.jpg");
+    background-size: cover  ;
+    background-repeat: no-repeat;
+
+    font-family: 'oswald';
+    
+    color: white;
+    
+}
+
+.head_subpage h2{
+    margin: auto;
+    text-align: center;
+    position: relative;
+    top: 50%;
+    font-size: 60px
+
+}
 
 /*#slideshow{
     animation:fading 7s infinite;

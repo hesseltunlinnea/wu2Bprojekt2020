@@ -18,3 +18,14 @@ function showSlides() {
   setTimeout(showSlides, 2000); // Change image every 2 seconds
 }
 
+function showMenu(){
+  let menu = document.querySelector('.menu');
+
+  menu.classList.toggle('show')
+
+  let fadeLayer = document.querySelector('.fade-layer')
+
+  fadeLayer.classList.toggle('visible')
+
+}
+
