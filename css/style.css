@@ -7,7 +7,7 @@ prel färgtema
 
 Kanske även ngt blått som matchar möblerna: typ #46BDA7 */
 body{
-    margin: 0;
+    margin: 0px;
 }
 
 @media screen and (max-width: 600px){
@@ -75,6 +75,7 @@ body{
         padding: 5vw
         
     }
+   
 
 
 }
@@ -104,21 +105,25 @@ header{
     top: 0;
     font-family: 'sail' ;
     font-size: 20px;
-    text-align: center;
     z-index: 0;
-
+    display: flex;
+    
 }
 
-header h1{
+header a{
     position: relative;
-    top: -20%
+    margin: auto;
+    left: -20px;
+    top: -20%;
 }
 
 
 
 .menu-button{
     cursor: pointer;
-    display: inline;
+    position: relative;
+    top: 14px;
+    left: 14px;
 }
 
 .menu-button i.material-icons{
@@ -141,9 +146,14 @@ header h1{
 }
 
 .menu ul{
+    padding: 0;
     list-style-type: none;
-    margin:0;
-    align-items: center
+    margin: 0;
+    align-items: center;
+    top: 5vh;
+    position: relative;
+    line-height: 4;
+    color: white;
 }
 
 .menu li{
@@ -151,7 +161,10 @@ header h1{
 }
 .menu a{
     text-decoration: none;
-    font-size: 20px
+    font-size: 25px;
+    font-family: 'railway';
+    color: white;
+    font-weight: bold;
 }
 
 .show{
@@ -241,10 +254,7 @@ a {
     background-color: green;
 }
 
-footer{
-    grid-area: ft;
-    background-color: gray
-}
+
 
 
 
@@ -272,12 +282,42 @@ img{
 }
 
 
+footer{
+    grid-area: ft;
+    background-color: rgb(187, 187, 187);
+    display: grid;
+    grid-template-areas: 
+    'h2 h2 h2'
+    'a1 a2 a3';
+    color: white
+}
 
-
-.google_map{
+footer h2{
+    grid-area: h2;
+    margin: auto;
+    text-align: center;
+    font-family: 'sail';
+    font-size: 35px;
     
 }
 
+.a1_ft{
+    grid-area: a1;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.a2_ft{
+    grid-area: a2;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.a3_ft{
+    grid-area: a3;
+    margin: 0 auto;
+    text-align: center;
+}
 
 /*SUBPAGES*/
 
@@ -293,6 +333,11 @@ img{
 
 .head_subpage{
     grid-area: pic;
+    background-size: cover  ;
+    background-repeat: no-repeat;
+    font-family: 'oswald';
+    color: white;
+    
 }
 
 .sec_subpage{    /* section på undersidorna  */
@@ -302,13 +347,15 @@ img{
 
 .historia.head_subpage{
     background-image: url("../img/20200308_120151.jpg");
-    background-size: cover  ;
-    background-repeat: no-repeat;
 
-    font-family: 'oswald';
-    
-    color: white;
-    
+}
+.mat.head_subpage{
+    background-image: url("../img/20200308_120020.jpg");
+
+}
+.historia.head_subpage{
+    background-image: url("../img/20200308_120151.jpg");
+
 }
 
 .head_subpage h2{
