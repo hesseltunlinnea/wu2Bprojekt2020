@@ -63,67 +63,74 @@
             Skissa
             </td>
             <td>
-            <!-- Vad görs utanför lektionen vecka 6? -->
+            Ladda upp skissen
             </td>
         </tr>
 
         <tr>           
             <td>7</td>
             <td>
-            <!-- Vad görs på lektionen vecka 7? -->
+            Påbörja index.html
             </td>
             <td>
-            <!-- Vad görs utanför lektionen vecka 7? -->
+            Fortsätta med index
             </td>
         </tr>
 
         <tr>           
             <td>8</td>
             <td>
-            <!-- Vad görs på lektionen vecka 8? -->
+            Skapa de andra html-sidorna
+            <br> På börja css (grid mm, mobilanpassning)
             </td>
             <td>
-            <!-- Vad görs utanför lektionen vecka 8? -->
+            Fortsätta med mobilanpassningen
             </td>
         </tr>
 
         <tr>          
             <td>9</td>
             <td>
-            <!-- Vad görs på lektionen vecka 9? -->
+            Lägga in bilder och text <br> Styla dessa i css
             </td>
             <td>
-            <!-- Vad görs utanför lektionen vecka 9? -->
+            CSS
             </td>
         </tr>
 
         <tr>          
             <td>10</td>
             <td>
-            <!-- Vad görs på lektionen vecka 10? -->
+            Påbörja desktop-anpassning
+            Slideshow
             </td>
             <td>
-            <!-- Vad görs utanför lektionen vecka 10? -->
+            Finslipa
             </td>
         </tr>
 
         <tr>           
             <td>11</td>
             <td>
-            <!-- Vad görs på lektionen vecka 11? -->
+            Slideshow <br> färger, fonts
             </td>
             <td>
-            <!-- Vad görs utanför lektionen vecka 11? -->
+            Ta bilder på restaurangen
             </td>
         </tr>
 
         <tr>          
             <td>12</td>
             <td>
-            <!-- Vad görs på lektionen vecka 12? -->
+            Slideshow <br>
+            Hamburgarmeny <br>
+            Fyll footer
+        
             </td>
             <td>
-            <!-- Vad görs utanför lektionen vecka 12? -->
+            Fyll undersidor (google-map) <br>
+            ta fler bilder
+
             </td>
         </tr>
 
@@ -175,7 +182,7 @@
 
     <h3>Lektion vecka 12</h3>
     Den här lektionen gjorde jag några tester. Den första testen jag utförde var contrastchecker och den blev helt godkänd.
-    <img src="./contrastchecker.PNG" alt="Bild av resultatet på contrastchecker">
+    <br><img src="./contrastchecker.PNG" alt="Bild av resultatet på contrastchecker" style= "width:30%">
     <p>jkfekjkejf <br>
     Hemma kunde jag också fixa med undersidorna. På "hitta"-sidan ville jag ha en embedded google map vilket finns tillgänglighet
     på google. Däremot ville jag att kartans storlek skulle anpassas till sidan storlek men problemet var att den var en iframe-tag
@@ -185,13 +192,88 @@
 
     <img src="./googlemapiframebefore.PNG" alt="Före">
     <img src="./googlemapiframeafter.PNG" alt="Efter">
+
+    <em> Att göra: css-minify, +spela in hemsidan, ladda upp skiss</em>
+
+    <h3>Lektion vecka 13</h3>
+    <p>Denna lektionen gick fort! Jag upplevde att jag inte hann så mcyket som jag hade planerat. Denna lektion tänkte jag hinna göra
+        testet, anpassa slideshow och göra iordning alla undersidor - vilket i och för sig var en väldigt ambitiös plan. Jag han fixa 
+        lite smågrejer men jag har fortfarande mycket kvar. Därför kommer jag att behöva jobba ganska intensivt nu fram till
+        inlämning. 
+    </p>
+   
+
+
+
     <h2>4. Testning</h2>
     <!-- Testa i Chrome + Firefox eller Safari (på både dator och mobil). Skiljer sig resultatet? Har du behövt anpassa ditt kod/innehåll efter de olika webbläsarna? Hur gick valideringen? Vad säger contrastchecker.com om text/bakgrundsfärg? Hur ser resultatet ut på en riktig telefon? -->
+    <h3>HTML-validering</h3>
+    <p>Efter att ha testat index.html fick jag ett par varningar och felmeddelanden. Vissa var lätta att fixa (ex. en saknad sluttagg)
+        och vissa tog lite längre tid. Jag hade exempelvis satt en a-tagg inuti en button vilket tydligen inte var lämpligt. Därför ändrade
+        jag button-taggen till en div-tagg men eftersom jag hade en class som cssen utgick ifrån så gick det smidigt. 
+        <br>
+        Några varningar valde jag att inte göra något åt (se nedan). Det var exempelvis att man skulle ha en heading i varje section ellet
+        att den klagade google-font-länken. 
+    </p>
+    <img src="./index.html_testning.PNG" alt="Validering av index.html" style="width: 50%">
+
+    <h3>CSS-validering</h3>
+    <p>När jag testade css-koden fick jag först ett litet felmeddelanden angående en kommentar längst ner i filen som jag hade glömt att 
+    ta bort. Men så fort jag raderade denna så blev den godkänd. </p>
+    <img src="./css_testning.PNG" alt="Validering av CSS" style="width: 50%">
+    
+    <h3>Mobil-testning</h3>
+        <p>När jag provade att öppna hemsidan i mobilen så insåg jag att sidomenyn inte riktgt stämde. Detta berodde på att jag hade angett
+            bredden med viewwdith-mått och jag inte inte satt in nya värden under @media screen anpassningen. Därför ändrade jag så att mobilanpassningen
+            istället hade 90vw. Dessutom hade jag glömt att jag hade väntat med att ange font och storlek på articlen på undersidorna för att jag inte 
+            hade bestämt mig hur jag ville att det skulle se ut än. 
+        </p>
+        <img src="./mobiltestmenu.jpg" alt="Bild på sidomenyn" style="width: 20%;">
+        <img src="./mobiltestundersida.jpg" alt="Bild på undersidan" style="width:20%">
+
+    <h3>Test på andra webbläsare</h3>
+    <p>Jag började att testa hemsidan på internet explorer. Det jag noterade var att fonten "raleway" som används i 
+        sidomenyn inte verkade fungera. Så vitt jag kan se så ser det ut som att den funkar i brödtexten i index.hml. 
+        Jag funderar därför om detta kan ha att göra med referenslänken till gooogle-fonts - kanske därför jag fick
+        ett felmeddeland när jag gjorde valideringen. Å andra sidan verkar ju den funka för brödtexten? Jag började
+        därför spekulera om det kan ha att göra med att det är länkar och det kanske finns någon annan form av prioriteringsordning
+        i explorer men det är nog inte heller troligt eftersom länktexten i knapparna på index.hml har fonten raleway.
+        Det verkar inte heller ha att göra med att den är bold. Jag testade även en annan metod för att importera fonten (via cssen @media...)
+        Men detta fungerade inte heller.     </p>
+    <img src="./explorer-testning4.PNG" alt="Explorer, meny" style="width: 20%";>
+    <img src="./explorer-testning5.PNG" alt="Explorer, inspektör" >
+    <p>Dessutom hamnade headern under slide-showen. Detta kunde jag fixa men ett z-index med högt värde. <br></p>
+
+    <p>Den andra webbläsaren jag provade var firefox. Men även där så stämde inte heller fonten i menyn. Däremot satt headern rätt. 
+    </p>
+
+    <img src="./firefoxtest1.PNG" alt="Firefox-test" style="width:20%">
+    <img src="./firefoxtest2.PNG" alt="Firefox-test" style="width:20%">
+
+
 
     <h2>5. Utvärdering</h2>
     <!-- Ex: Vad gick bra/mindre bra? (i arbetet/din förmåga).
     Nyanserat: "hur hade det blivit om jag istället hade...?"
     Konkreta förbättringsförslag i produkt + process. -->
+    <p>Det som gick mindre bra var att jag kände mig lite stressad och hade ganska mycket kvar att fixa i slutet av projektet.
+    Därför borde jag strukturerat och schemalagt lektionerna så att jag visste hur mycket tid jag kunde lägga på varje moment
+    och på så sätt förhoppningsvis mer effektivt. <br> Det som gick bra var att jag upplevde att jag hade ganska klar bild hur hemsidan
+    skulle se ut och jag lyckades väldigt bra med gridet och responsiviteten på index.hml. Däremot blev jag lite mindre nöjs med headern.
+    Jag ville att den skulle vara "fixed" men jag tyckte ändå inte att det såg så bra ut eftersom jag inte visste vilken färg jag ville 
+    att headern skulle ha. I början hade jag en bild om vilka färger jag ville att hemsidan skulle ha (de skulle spegla färgerna
+    på inredningen i restaurangen) men när jag hade kommit en bit blev det lite för mycket färg och därav var det svårt att färgsätta headern.
+    Om jag hade mer tid kanske jag istället hade implementerat med javascript och kanske gjort att headern hade bytt form eller färg, 
+    eventuell en eventlistner på om sidan scrollas. 
+    <br>
+    Under detta moment har jag lärt mig mycket, bland annat hur man kan i css använda flera classer och sedan ge egenskaper genom att exempelvis
+    skriva ".header.bild" eller ".section img". Jag har även lyckats lösa flera problem som jag stött på (exempelvis det jag tidigare nämnt
+    om att göra google-map-kartan resposiv). 
+    </p>
+
+
+    <p>Om jag hade haft mer tid hade jag redigerat hemsidans bilder med färgbalans, intensitet, nyans mm. Då tror jag att hemsidans innehåll
+    hade smält ihop bättre och givit en mer enhetlig look. Jag hade dessutom försökt lära mig mer javascript. </p> 
 
 </body>
 </html>
