@@ -1,153 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Andrum - Vegetarisk restaurang och café i Göteborg</title>
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Barlow|Oswald:700|Parisienne|Questrial|Raleway:300|Sail&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Barlow|Oswald:700|Parisienne|Questrial|Raleway:300|Sail&display=swap"
+        rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-   
+
 </head>
+
 <body>
     <header>
-            
-            <div class="menu-button" onclick="showMenu()">
-                    <i class="material-icons">menu</i>
-                </div>
-        <a href="#index.html"><h1>Andrum</h1></a>
-        
+
+        <div class="menu-button" onclick="showMenu()">
+            <i class="material-icons">menu</i>
+        </div>
+        <a href="#index.html">
+            <h1>Andrum</h1>
+        </a>
+
 
     </header>
 
     <div class="menu">
 
         <ul>
-            <li><a href="./historia_undersida.html">OM OSS</a></li> 
-            <li><a href="./mat_undersida.html">VÅR MAT</a></li>
-            <li><a href="./hitta_undersida.html">HITTA HIT</a></li>
-            <li><a href="./kontakt_undersida.html">KONTAKTA OSS</a></li>
-        
+            <li>
+                <a href="./historia_undersida.html">OM OSS</a>
+            </li>
+            <li>
+                <a href="./mat_undersida.html">VÅR MAT</a>
+            </li>
+            <li>
+                <a href="./hitta_undersida.html">HITTA HIT</a>
+            </li>
+            <li>
+                <a href="./kontakt_undersida.html">KONTAKTA OSS</a>
+            </li>
+
         </ul>
-        
+
     </div>
 
-    <div class="fade-layer"  onclick="showMenu()"></div>
+    <div class="fade-layer" onclick="showMenu()"></div>
 
     <div id="container">
-        
-    
-    <main>
-<!-- https://www.w3schools.com/howto/howto_js_slideshow.asp -->
-     <div class="slideshow-container">
-
-        <div class="mySlides fade">
-        
-        <!-- Lägg en picturetag för att göra att bilderna ändras beroende på skärm-->
-        <img src="./img/Slideshow/20200308_115814.jpg" style="width:100%">
-        <div class="text">Caption Text</div>
-        </div>  
-
-        <div class="mySlides fade">
-        
-        <img src="./img/Slideshow/20200308_115948.jpg" style="width:100%">
-        <div class="text">Caption Two</div>
-        </div>
 
 
-        <div class="mySlides fade">
-        
-        <img src="./img/Slideshow/20200308_120020.jpg" style="width:100%">
-        <div class="text">Caption Three</div>
-        </div>
-
-</div>
-<br>
-
-<div style="text-align:center">
-  <span class="dot"></span> 
-  <span class="dot"></span> 
-  <span class="dot"></span> 
-</div>
-
-
-    </main>
-
-    <section class="historia sec_index">
-        <div class="img right">
+        <main>
+             
             
-        </div>
-        <article class="left">
-                <h3>Vår historia</h3>
-                <p>Andrum är en av Göteborgs äldsta vegetariska restauranger. Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima odio ad sint rerum, itaque et libero quasi sapiente magnam nam?</p>
-                <button class="button_index"> <a href="historia_undersida.html">Läs mer</a></button>
-        </article>
-    </section>
 
-    <section class="mat sec_index">
-            <div class="img left">
-               
+            <!-- https://www.w3schools.com/howto/howto_js_slideshow.asp -->
+            <div class="slideshow-container">
+
+                <div class="mySlides fade slide_1">
+                        <h2>Välkommen till</h2>
+                        <h1>Andrum</h1>
+                        <h2>Göteborgs bästa vegetatiska restaurang</h2>
+
+                </div>
+
+                <div class="mySlides fade slide_2">
+                    <!--
+
+                    <img src="./img/Slideshow/20200308_115948.jpg" alt="Bild på restaurangen" style="height:100%">
+                    -->
+                </div>
+
+
+                <div class="mySlides fade slide_3">
+
+                    <img src="./img/Slideshow/20200308_120020.jpg" alt="Bild på maten" style="height:100%">
+
+                </div>
+
             </div>
-            <article class="right">
-            <h3>Vår mat</h3>
-            <p>Vi erbjuder både lakto-ovo-vegetariska och veganska rätter. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet velit maiores delectus aut, dolorem deleniti officiis eos vel repudiandae fuga! </p>
-            <button class="button_index"> <a href="mat_undersida.html">Vår meny</a></button>
-            </article>
-    </section>
-    
+            <br>
 
-    <section class="hitta sec_index">
+            <div style="text-align:center">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+
+
+        </main>
+
+        <section class="historia sec_index">
             <div class="img right">
-                
 
-              <!--  <iframe class="google_map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2131.4946189184006!2d11.964750351621209!3d57.70805558102851!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464ff3641cb87fc7%3A0xd4f2e537dea24848!2sAndrum!5e0!3m2!1ssv!2sse!4v1583084223200!5m2!1ssv!2sse" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-
-              -->
             </div>
             <article class="left">
-            <h3>Hitta hit</h3>
-            <p>Vi erbjuder både lakto-ovo-vegetariska och veganska rätter. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet velit maiores delectus aut, dolorem deleniti officiis eos vel repudiandae fuga! </p>
-            <button class="button_index"> <a href="hitta_undersida.html"></a></button>
+                <h3>Vår historia</h3>
+                <p>Andrum är en av Göteborgs äldsta vegetariska restauranger. Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit. Minima odio ad sint rerum, itaque et libero quasi sapiente magnam nam?</p>
+                <div class="button_index">
+                    <a href="historia_undersida.html">Läs mer</a>
+                </div>
             </article>
-    </section>
+        </section>
 
-    <section class="kontakt sec_index"> <div class="img"></div>
-        <article> <div class="img left">
-                <img src= alt="">
+        <section class="mat sec_index">
+            <div class="img left">
+
             </div>
             <article class="right">
-            <h3>Kontakta oss</h3>
-            <p>
-            <button class="button_index"> <a href="kontakt_undersida.html"></a></button>
-        </article>
-    </section>
+                <h3>Vår mat</h3>
+                <p>Vi erbjuder både lakto-ovo-vegetariska och veganska rätter. Lorem ipsum, dolor sit amet consectetur adipisicing
+                    elit. Amet velit maiores delectus aut, dolorem deleniti officiis eos vel repudiandae fuga! </p>
+                <div class="button_index">
+                    <a href="mat_undersida.html">Vår meny</a>
+                </div>
+            </article>
+        </section>
 
-    <footer>
-        <h2>Andrum</h2>
 
-        <article class="a1_ft">
-            <h4>Öppetider</h4>
-            <ul>
-                <li>Vardagar 11-22</li>
-                <li>Helger   12-21</li>
+        <section class="hitta sec_index">
+            <div class="img right">
+            </div>
+            <article class="left">
+                <h3>Hitta hit</h3>
+                <p>Vi erbjuder både lakto-ovo-vegetariska och veganska rätter. Lorem ipsum, dolor sit amet consectetur adipisicing
+                    elit. Amet velit maiores delectus aut, dolorem deleniti officiis eos vel repudiandae fuga! </p>
+                <div class="button_index">
+                    <a href="./hitta_undersida.html">Hitta hit</a>
+                </div>
+            </article>
+        </section>
 
-            </ul>
-        </article>
+        <section class="kontakt sec_index">
+            <div class="img left">
+            </div>
+            <article class="right">
+                <h3>Kontakta oss</h3>
+                <p>Har du frågor kring vår mat, vår restaurang eller söker du jobb? Här gör du det! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione dolorem adipisci nobis ut dicta deserunt.</p>
+                    <div class="button_index">
+                        <a href="kontakt_undersida.html">Kontakt</a>
+                    </div>
+            </article>
+        </section>
 
-        <article class="a2_ft">
-            <h4>Besöksadress</h4>
-            <p>Andrum vegetrisk restaurang <br> Östra Hamngatan 19 <br> 411 10 Göteborg</p>
-        </article>
+        <footer>
+            <h2>Andrum</h2>
 
-        <article class="a3_ft">
-            <h4>Kontakta oss</h4>
-            <p>tel 031-13 85 04 <br>andrum.veg@gmail.com</p>
-        </article>
-    </footer>
+            <article class="a1_ft">
+                <h4>Öppetider</h4>
+                <ul>
+                    <li>Vardagar 11-22</li>
+                    <li>Helger 12-21</li>
+
+                </ul>
+            </article>
+
+            <article class="a2_ft">
+                <h4>Besöksadress</h4>
+                <p>Andrum vegetrisk restaurang
+                    <br> Östra Hamngatan 19
+                    <br> 411 10 Göteborg</p>
+            </article>
+
+            <article class="a3_ft">
+                <h4>Kontakta oss</h4>
+                <p>tel 031-13 85 04
+                    <br>andrum.veg@gmail.com</p>
+            </article>
+        </footer>
 
     </div>
     <script src="./js/script.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
 </body>
+
 </html>
