@@ -1,13 +1,9 @@
-/*
-prel färgtema
-#E89D48
-#FF7342
-#E07980
 
 
-Kanske även ngt blått som matchar möblerna: typ #46BDA7 */
+
 body{
     margin: 0px;
+    overflow-x: hidden;
 }
 
 @media screen and (max-width: 600px){
@@ -20,7 +16,7 @@ body{
         's3'
         's4'
         'ft';
-        grid-template-rows: 100vh  100vh  100vh  100vh 100vh 40vh ;
+        grid-template-rows: 60vh  100vh  100vh  100vh 100vh auto ;
         grid-template-columns: 100vw;
     }
 
@@ -28,8 +24,31 @@ body{
         height: 50%;
     }
    
+    footer{
+        grid-area: ft;
+        background-color: #deba49;
+        display: grid;
+        grid-template-areas: 
+        'h2'
+        'a1'
+        'a2'
+        'a3';
+        color: white
+    }
+
+    .subpage_container{
+        display: grid;
+        grid-template-areas:
+        'pic'
+        'sec'
+        'ft';
+        grid-template-rows: 50vh  auto  auto ;
+        grid-template-columns: 100vw;
+    }
     
-    
+    .menu{
+        width: 90vw;
+    }
 }
 
 @media screen and (min-width: 601px){
@@ -69,13 +88,38 @@ body{
         
     }
 
+    .subpage_container{
+        display: grid;
+        grid-template-areas:
+        'pic'
+        'sec'
+        'ft';
+        grid-template-rows: 50vh  auto  40vh ;
+        grid-template-columns: 100vw;
+    }
+
     .sec_subpage article{
         margin: 2vw 20vw 2vw 20vw ;
         background: white;
-        padding: 5vw
-        
+        padding: 5vw;
+        font-size: 21px;
+        font-family: 'raleway';
+        text-align: justify;
     }
    
+    footer{
+        grid-area: ft;
+        background-color: #deba49;
+        display: grid;
+        grid-template-areas: 
+        'h2 h2 h2'
+        'a1 a2 a3';
+        color: white
+    }
+
+    .menu{
+        width: 30vw;
+    }
 
 
 }
@@ -84,8 +128,7 @@ body{
 /*INDEX PAGE OCH GEMENSAMMA TAGGAR*/
 
 .slideshow-container {
-    height: 100%;
-    width: auto;
+    height: 100vh;
     position: relative;
     top: 0;
     margin: auto;
@@ -94,18 +137,33 @@ body{
 
 .myslides{
     position: relative;
-    top: 0
+    top: 0;
+   
+    overflow: hidden;
+
 }
+
+.slide_1{
+    background-image: url(../img/Slideshow/slide1.jpg);
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+.slide_2{
+    background-image: url("../img/Slideshow/20200308_115948.jpg");
+    background-size: cover;
+}
+
 
 header{
     position: fixed;
     width: 100vw;
     height: 70px;
-    background: rgba(255, 255, 255, 0.26);
+    background: #f6af33;
     top: 0;
     font-family: 'sail' ;
     font-size: 20px;
-    z-index: 0;
+    z-index: 10;
     display: flex;
     
 }
@@ -133,14 +191,13 @@ header a{
 
 .menu{
     height: 100vh;
-    width: 30vw;
     background: #E07980;
     position: fixed;
     top: 0;
-    left: -90vw;
+    left: -100vw;
     transition: left 0.3s;
     box-shadow: 10px 0px 21px -10px rgba(0,0,0,0.75);
-    z-index: 10;
+    z-index: 11;
     align-content: center;
     text-align: center;
 }
@@ -198,6 +255,7 @@ main{
 
 }
 
+
 .sec_index{
     /*padding: 30px;*/
     text-align: center;
@@ -210,8 +268,8 @@ article{
 
  .button_index{
     background-color: white;
-    width: 150px;
-    height: 40px;
+    width: 120px;
+    padding: 7px;
     margin: 40px;
     display: inline-block;
     text-decoration: none;
@@ -225,6 +283,10 @@ article{
     
 }
 
+.button_index a{
+    margin: auto;
+}
+
 a {
     text-decoration: none;
     color: black;
@@ -233,7 +295,7 @@ a {
 
 .historia {
     grid-area: s1;
-    background-color: rgb(253, 132, 87);
+    background-color: #f78659;
    
 }
 
@@ -251,7 +313,7 @@ a {
 
 .kontakt{
     grid-area: s4;
-    background-color: green;
+    background-color:#33A36A;
 }
 
 
@@ -266,31 +328,33 @@ img{
     background-image: url(../img/20200308_120151.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 
 }
 .mat .img{
     background-image: url(../img/varmat.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 
 }
 .hitta .img{
     background-image: url(../img/andrummap.png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
+
+}
+.kontakt .img{
+    background-image: url(../img/kontaktaossbla.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 
 }
 
 
-footer{
-    grid-area: ft;
-    background-color: rgb(187, 187, 187);
-    display: grid;
-    grid-template-areas: 
-    'h2 h2 h2'
-    'a1 a2 a3';
-    color: white
-}
+
 
 footer h2{
     grid-area: h2;
@@ -321,28 +385,22 @@ footer h2{
 
 /*SUBPAGES*/
 
-.subpage_container{
-    display: grid;
-    grid-template-areas:
-    'pic'
-    'sec'
-    'ft';
-    grid-template-rows: 50vh  auto  40vh ;
-    grid-template-columns: 100vw;
-}
+
 
 .head_subpage{
     grid-area: pic;
     background-size: cover  ;
+    background-position: center;
     background-repeat: no-repeat;
     font-family: 'oswald';
     color: white;
+    z-index: -1;
     
 }
 
 .sec_subpage{    /* section på undersidorna  */
     grid-area: sec;
-    background: green;
+    background: #E07980;
 }
 
 .historia.head_subpage{
@@ -367,10 +425,7 @@ footer h2{
 
 }
 
-/*#slideshow{
-    animation:fading 7s infinite;
-    width: 100%
+.hitta_subpage article{
+    width: 60vw;
+    margin: auto
 }
-    
-
-    @keyframes fading{0%{opacity:0}50%{opacity:1}100%{opacity:0}}
