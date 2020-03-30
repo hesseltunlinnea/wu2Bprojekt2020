@@ -1,10 +1,10 @@
 
-
-
 body{
     margin: 0px;
     overflow-x: hidden;
 }
+
+/* Responsivitet etc */
 
 @media screen and (max-width: 600px){
     #container{
@@ -56,15 +56,11 @@ body{
     }
    
     footer{
-        grid-area: ft;
-        background-color: rgba(246, 175, 51);
-        display: grid;
         grid-template-areas: 
         'h2'
         'a1'
         'a2'
         'a3';
-        color: white
     }
 
     .subpage_container{
@@ -99,7 +95,7 @@ body{
         's3 s3'
         's4 s4'
         'ft ft';
-        grid-template-rows: 100vh  50vh  50vh  50vh 50vh 40vh ;
+        grid-template-rows: 100vh  50vh  50vh  50vh 50vh 30vh ;
         grid-template-columns: 100vw;
     }
 
@@ -180,13 +176,10 @@ body{
     }
    
     footer{
-        grid-area: ft;
-        background-color: rgba(246, 175, 51);
-        display: grid;
         grid-template-areas: 
         'h2 h2 h2'
         'a1 a2 a3';
-        color: white
+        
     }
 
     .menu{
@@ -310,6 +303,8 @@ h1{
     color: white;
 }
 
+/*Main och slideshowen*/
+
 main{
     grid-area: mn;
     background-color: #E89D48;
@@ -320,7 +315,7 @@ main{
 
 .mySlides{
     text-align: center;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.473), 0 0 25px rgba(0, 0, 0, 0.329);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.301), 0 0 15px rgba(0, 0, 0, 0.226);
     position: relative;
     top: -30px;
     width: 100%;
@@ -353,8 +348,9 @@ main{
 }
 
 
+/*Innehåll specifikt för index*/
+
 .sec_index{
-    /*padding: 30px;*/
     text-align: center;
     font-family: 'Raleway', sans-serif;
     font-weight: 300;
@@ -362,6 +358,7 @@ main{
 }
 article{
     margin: 30px;
+    align-self: center;
 }
 
 article h3{
@@ -403,8 +400,6 @@ a {
    
 }
 
-
-
 .mat{
     grid-area: s2;
     background: #E07980
@@ -419,10 +414,6 @@ a {
     grid-area: s4;
     background-color:#33A36A;
 }
-
-
-
-
 
 img{
     max-width: 100%;
@@ -458,7 +449,15 @@ img{
 }
 
 
+/*Footer*/
 
+footer{
+    grid-area: ft;
+    background-color: #6b7665;
+    display: grid;
+    color:white;
+    
+}
 
 footer h2{
     grid-area: h2;
@@ -487,8 +486,8 @@ footer h2{
     text-align: center;
 }
 
-/*SUBPAGES*/
 
+/*SUBPAGES*/
 
 
 .head_subpage{
@@ -505,6 +504,10 @@ footer h2{
 .sec_subpage{    /* section på undersidorna  */
     grid-area: sec;
     background: #E07980;
+}
+
+.sec_subpage h3{
+    font-weight: 600;
 }
 
 .historia.head_subpage{
@@ -530,8 +533,7 @@ footer h2{
 }
 
 .hitta_subpage article{
-    width: 60vw;
-    margin: auto
+    text-align: center
 }
 
 .sec_subpage h6{
