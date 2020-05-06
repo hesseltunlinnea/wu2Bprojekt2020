@@ -147,13 +147,7 @@ body{
         grid-area: left;
     }
 
-    .historia.img{
-        background-image: url(../img/IMG_05721.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        
-        
-    }
+   
 
     .subpage_container{
         display: grid;
@@ -420,7 +414,7 @@ img{
 }
 
 .historia .img{
-    background-image: url(../img/20200308_120151.jpg);
+    background-image: url(../img/historia_img.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -511,16 +505,13 @@ footer h2{
 }
 
 .historia.head_subpage{
-    background-image: url("../img/20200308_120151.jpg");
-
+    background-image: url("../img/historia_subpage.jpg");
 }
 .mat.head_subpage{
-    background-image: url("../img/20200308_120020.jpg");
-
+    background-image: url("../img/mat_subpage.jpg");
 }
-.historia.head_subpage{
-    background-image: url("../img/20200308_120151.jpg");
-
+.kontakt.head_subpage{
+    background-image: url("../img/kontakt_subpage.jpg");
 }
 
 .head_subpage h2{
